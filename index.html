@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>My Library</h1>
+    <table id="library-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Read</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Book entries will be dynamically added here -->
+             <tr>
+                <td>The Great Gatsby</td>
+                <td>F. Scott Fitzgerald</td>
+                <td>180</td>
+                <td><input type="checkbox" checked></td>
+                <td><button class="delete-btn"><img src="trash-can-outline.svg"></button></td>
+             </tr>
+        </tbody>
+    </table>
+    <button id="add-book-btn">Add Book</button>
+
+    <dialog>
+        <button autofocus>Close</button>
+        <p>This modal dialog has a groovy backdrop!</p>
+    </dialog>
+
+</body>
+</html>
