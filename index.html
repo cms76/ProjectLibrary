@@ -30,11 +30,35 @@
              </tr>
         </tbody>
     </table>
-    <button id="add-book-btn">Add Book</button>
+    <button id="add-book-btn" onclick="addBookBtnClicked()">Add Book</button>
 
-    <dialog>
-        <button autofocus>Close</button>
-        <p>This modal dialog has a groovy backdrop!</p>
+    <dialog id="enter-book-dialog">
+        <form method="dialog">
+            <fieldset>
+                <legend>Enter Book Details</legend>
+                <div>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div>
+                    <label for="pages">Pages:</label>
+                    <input type="number" id="pages" name="pages" required>
+                </div>
+                <div>
+                    <label for="read">Read:</label>
+                    <input type="checkbox" id="read" name="read">
+                </div>
+            </fieldset>    
+            <div>
+                <button class="submit-btn" type="submit">Add Book</button>
+                <button class="submit-btn" type="button" onclick="submitAndCloseDialog()">Add Book & Close</button>
+                <button class="cancel-btn" type="button" onclick="closeDialog()">Close</button>
+            </div>
+        </form>        
     </dialog>
 
 </body>

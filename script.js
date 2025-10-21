@@ -17,3 +17,21 @@ function addBookToLibrary(title, author, nPages) {
     book.nPages = nPages;
     myLibrary.push(book);
 }
+
+function addBookBtnClicked() {
+    //show modal dialog enter-book-dialog
+    const dialog = document.getElementById("enter-book-dialog");
+    dialog.showModal();
+}
+
+function closeDialog() {
+    const dialog = document.getElementById("enter-book-dialog");
+    dialog.close();
+}
+
+function submitAndCloseDialog() {
+    //Todo: read input values and add book to library
+    
+    const dialog = document.getElementById("enter-book-dialog");
+    dialog.close();
+}
