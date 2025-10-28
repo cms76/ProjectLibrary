@@ -33,7 +33,7 @@
     <button id="add-book-btn" onclick="addBookBtnClicked()">Add Book</button>
 
     <dialog id="enter-book-dialog">
-        <form method="dialog">
+        <form id="book-form" method="dialog">
             <fieldset>
                 <legend>Enter Book Details</legend>
                 <div>
@@ -54,7 +54,7 @@
                 </div>
             </fieldset>    
             <div>
-                <button class="submit-btn" type="submit">Add Book</button>
+                <button class="submit-btn" type="button" onclick="submitAndKeepOpen()">Add Book</button>
                 <button class="submit-btn" type="button" onclick="submitAndCloseDialog()">Add Book & Close</button>
                 <button class="cancel-btn" type="button" onclick="closeDialog()">Close</button>
             </div>
